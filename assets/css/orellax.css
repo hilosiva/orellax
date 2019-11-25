@@ -1,0 +1,118 @@
+.orellax {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.orellax[data-type="fadeIn"] {
+  opacity: 0;
+}
+
+.orellax[data-type="fadeIn"].is-orellaxActive {
+  opacity: 1;
+}
+
+.orellax[data-type="slideUpIn"] {
+  opacity: 0;
+  -webkit-transform: translateY(2.5rem);
+      -ms-transform: translateY(2.5rem);
+          transform: translateY(2.5rem);
+}
+
+.orellax[data-type="slideUpIn"].is-orellaxActive {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.orellax[data-type="slideDownIn"] {
+  opacity: 0;
+  -webkit-transform: translateY(-2.5rem);
+      -ms-transform: translateY(-2.5rem);
+          transform: translateY(-2.5rem);
+}
+
+.orellax[data-type="slideDownIn"].is-orellaxActive {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.orellax[data-type="slideLeftIn"] {
+  opacity: 0;
+  -webkit-transform: translateX(2.5rem);
+      -ms-transform: translateX(2.5rem);
+          transform: translateX(2.5rem);
+}
+
+.orellax[data-type="slideLeftIn"].is-orellaxActive {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.orellax[data-type="slideRightIn"] {
+  opacity: 0;
+  -webkit-transform: translateX(-2.5rem);
+      -ms-transform: translateX(-2.5rem);
+          transform: translateX(-2.5rem);
+}
+
+.orellax[data-type="slideRightIn"].is-orellaxActive {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.orellax[data-type="zoomIn"] {
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.orellax[data-type="zoomIn"].is-orellaxActive {
+  opacity: 1;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+@-webkit-keyframes orellaxFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes orellaxFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes orellaxSlideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes orellaxSlideIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
