@@ -3,15 +3,19 @@
 }
 
 .orellax[data-type="fadeIn"] {
-  opacity: 0;
+  &.is-orellaxReady {
+    opacity: 0;
+  }
   &.is-orellaxActive {
     opacity: 1;
   }
 }
 
 .orellax[data-type="slideUpIn"] {
-  opacity: 0;
-  transform: translateY(2.5rem);
+  &.is-orellaxReady {
+    opacity: 0;
+    transform: translateY(2.5rem);
+  }
   &.is-orellaxActive {
     opacity: 1;
     transform: translateY(0);
@@ -19,8 +23,11 @@
 }
 
 .orellax[data-type="slideDownIn"] {
-  opacity: 0;
-  transform: translateY(-2.5rem);
+  &.is-orellaxReady {
+    opacity: 0;
+    transform: translateY(-2.5rem);
+  }
+
   &.is-orellaxActive {
     opacity: 1;
     transform: translateY(0);
@@ -28,8 +35,11 @@
 }
 
 .orellax[data-type="slideLeftIn"] {
-  opacity: 0;
-  transform: translateX(2.5rem);
+  &.is-orellaxReady {
+    opacity: 0;
+    transform: translateX(2.5rem);
+  }
+
   &.is-orellaxActive {
     opacity: 1;
     transform: translateY(0);
@@ -37,8 +47,11 @@
 }
 
 .orellax[data-type="slideRightIn"] {
-  opacity: 0;
-  transform: translateX(-2.5rem);
+  &.is-orellaxReady {
+    opacity: 0;
+    transform: translateX(-2.5rem);
+  }
+
   &.is-orellaxActive {
     opacity: 1;
     transform: translateY(0);
@@ -46,8 +59,10 @@
 }
 
 .orellax[data-type="zoomIn"] {
-  opacity: 0;
-  transform: scale(0);
+  &.is-orellaxReady {
+    opacity: 0;
+    transform: scale(0);
+  }
   &.is-orellaxActive {
     opacity: 1;
     transform: scale(1);

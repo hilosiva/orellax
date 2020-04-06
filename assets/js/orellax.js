@@ -15,7 +15,7 @@ const orellax = (function () {
 
       if (e.isIntersecting) {
         e.target.classList.add('is-orellaxActive');
-        e.target.classList.remove('is-orellaxOver');
+        e.target.classList.remove('is-orellaxOver', 'is-orellaxReady');
       } else {
         e.target.classList.remove('is-orellaxActive');
         if (e.boundingClientRect.y < e.rootBounds.y) {
@@ -28,6 +28,7 @@ const orellax = (function () {
 
   const observer = new IntersectionObserver(isIntersect, options);
   for (let i = 0; i < items.length; i++) {
+    items[i].classList.add('is-orellaxReady');
     observer.observe(items[i]);
   }
 
