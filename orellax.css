@@ -87,7 +87,7 @@
 }
 
 .orellax[data-type~="textClosing"].is-orellaxReady {
-  letter-spacing: .5em;
+  letter-spacing: .25em;
 }
 
 .orellax[data-type~="textClosing"].is-orellaxActive {

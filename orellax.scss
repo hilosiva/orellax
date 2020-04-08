@@ -100,7 +100,7 @@ $duration-slow: 2s;
   // textClosing
   &[data-type~="textClosing"] {
     &.is-orellaxReady {
-      letter-spacing: .5em;
+      letter-spacing: .25em;
     }
     &.is-orellaxActive {
       letter-spacing: inherit;
