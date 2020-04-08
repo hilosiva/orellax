@@ -59,8 +59,8 @@ $duration-slow: 2s;
     }
   }
 
-  // slideUpIn
-  .orellax[data-type~="slideLeftIn"] {
+  // slideLeftIn
+  &[data-type~="slideLeftIn"] {
     &.is-orellaxReady {
       opacity: 0;
       transform: translateX(2.5rem);
@@ -68,7 +68,7 @@ $duration-slow: 2s;
 
     &.is-orellaxActive {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 
@@ -81,7 +81,7 @@ $duration-slow: 2s;
 
     &.is-orellaxActive {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0);
     }
   }
 

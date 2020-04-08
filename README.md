@@ -1,6 +1,10 @@
 # Orellax
 俺のパララックス アニメーションライブラリ
 
+## Demo
+https://hilosiva.github.io/orellax/
+
+
 ## Install
 HTMLファイルに `orellax.css` と `orellax.js` を読み込む。
 なお、IE11に対応する場合は、polyfill を利用する
