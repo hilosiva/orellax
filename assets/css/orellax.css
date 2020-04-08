@@ -50,13 +50,13 @@
           transform: translateY(0);
 }
 
-.orellax[data-type~="slideLeftIn"].is-orellaxReady {
+.orellax .orellax[data-type~="slideLeftIn"].is-orellaxReady {
   opacity: 0;
   -webkit-transform: translateX(2.5rem);
           transform: translateX(2.5rem);
 }
 
-.orellax[data-type~="slideLeftIn"].is-orellaxActive {
+.orellax .orellax[data-type~="slideLeftIn"].is-orellaxActive {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -84,4 +84,12 @@
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.orellax[data-type~="textClosing"].is-orellaxReady {
+  letter-spacing: .5em;
+}
+
+.orellax[data-type~="textClosing"].is-orellaxActive {
+  letter-spacing: inherit;
 }
