@@ -7,7 +7,9 @@ https://hilosiva.github.io/orellax/
 
 ## Install
 HTMLファイルに `orellax.css` と `orellax.js` を読み込む。
-なお、IE11に対応する場合は、polyfill を利用する
+なお、現在はIE11に対応することも多いと思います。
+
+その場合は、さらに polyfill も利用してください。
 
 https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver
 
@@ -33,6 +35,16 @@ https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver
 </body>
 </html>
 ```
+
+`orellax.css` と `orellax.js` はそれぞれ、圧縮版の`orellax.min.css` と `orellax.min.js` も用意してますので、必要に応じてご利用ください。
+
+
+### Polyfillを利用（IEへの対応を）しない場合
+現在 IEへの対応はすることが多いと思いますが、Polyfillを利用しない場合は、 `orellax.js` の 以下の行をコメントにするか削除するかしてください
+
+```JavaScript
+ observer.POLL_INTERVAL = 100;
+ ```
 
 ## How to Use
 ### 基本の使い方

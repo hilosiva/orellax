@@ -27,6 +27,10 @@ const orellax = (function () {
   }
 
   const observer = new IntersectionObserver(isIntersect, options);
+
+  // Polyfill を使わない場合は下記を削除
+  observer.POLL_INTERVAL = 100;
+
   for (let i = 0; i < items.length; i++) {
     items[i].classList.add('is-orellaxReady');
     observer.observe(items[i]);
